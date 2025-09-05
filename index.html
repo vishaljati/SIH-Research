@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>SIH 2025 — Problem Statement Comparative Table</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    :root{--bg:#0f172a;--card:#0b1220;--muted:#94a3b8;--accent:#60a5fa;--yes:#16a34a;--no:#ef4444}
+    html,body{height:100%;margin:0;font-family:Inter,ui-sans-serif,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial;background:linear-gradient(180deg,#071025 0%, #071827 60%);color:#e6eef8}
+    .wrap{max-width:1200px;margin:28px auto;padding:20px}
+    header{display:flex;align-items:center;gap:16px;margin-bottom:16px}
+    header h1{font-size:20px;margin:0}
+    header p{margin:0;color:var(--muted);font-size:13px}
+
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.04);padding:12px;border-radius:12px;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+
+    .table-wrap{overflow:auto;border-radius:8px;margin-top:12px}
+    table{width:100%;border-collapse:collapse;min-width:1100px}
+    thead th{position:sticky;top:0;background:rgba(6,10,20,0.9);backdrop-filter:blur(6px);z-index:2;padding:12px 10px;text-align:left;font-size:13px;color:#cfe9ff;border-bottom:1px solid rgba(255,255,255,0.04)}
+    tbody td{padding:12px 10px;border-bottom:1px dashed rgba(255,255,255,0.03);vertical-align:top;font-size:13px;color:#d8eafd}
+    tbody tr:hover td{background:linear-gradient(90deg, rgba(96,165,250,0.03), rgba(96,165,250,0.01))}
+
+    th.col-narrow, td.col-narrow{width:120px}
+    th.col-wide, td.col-wide{width:320px}
+
+    .tag{display:inline-block;padding:6px 8px;border-radius:999px;font-weight:600;font-size:12px}
+    .tag.yes{background:rgba(22,163,74,0.12);color:var(--yes);border:1px solid rgba(22,163,74,0.12)}
+    .tag.no{background:rgba(239,68,68,0.08);color:var(--no);border:1px solid rgba(239,68,68,0.06)}
+
+    .cell-compact{max-height:240px;overflow:auto;padding-right:6px}
+    .muted{color:var(--muted);font-size:13px}
+
+    footer{margin-top:12px;color:var(--muted);font-size:13px;display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+
+    @media (max-width:900px){.wrap{padding:12px} thead th, tbody td{padding:10px 8px;font-size:12px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="card" style="padding:10px 14px;border-radius:10px">
+        <h1>SIH 2025 — Problem Statement Comparative Table</h1>
+        <p>Four problem statements analyzed for India (Smart India Hackathon 2025). This table includes existing solutions, gaps, end‑users, government initiatives, and elimination status.</p>
+      </div>
+    </header>
+
+    <div class="card">
+      <div class="table-wrap">
+        <table role="table" aria-label="Problem statement comparison">
+          <thead>
+            <tr>
+              <th class="col-wide">Problem Statement</th>
+              <th class="col-wide">Existing Solutions in India</th>
+              <th class="col-wide">Specific Gaps / Limitations</th>
+              <th class="col-wide">Real End‑Users & Needs</th>
+              <th class="col-wide">Government Initiatives / Policies</th>
+              <th class="col-narrow">Elimination?</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Crowdsourced Civic Issue Reporting &amp; Resolution</strong></td>
+              <td class="cell-compact">Several platforms exist: Janaagraha’s <em>I Change My City</em> and MoHUA’s Swachhata app let citizens post civic issues. CRAMAT app on Mobile Seva enables reporting of garbage, potholes, etc. CPGRAMS handles grievances (11.2M cases 2019–24). NGO apps also exist.</td>
+              <td class="cell-compact">Forms are complex, many citizens struggle. Apps misused with false “resolved” updates. Low awareness, slow official responses, lack of multilingual/voice support, poor feedback loops.</td>
+              <td class="cell-compact">Urban/rural residents need simple, accessible (photo/voice/SMS, local languages) tools with timely updates. Officials need efficient dashboards and tracking.</td>
+              <td class="cell-compact">MoHUA’s Swachhata app, CPGRAMS, Smart Cities ICCCs, state/local grievance apps, and Mobile Seva. AI/voice grievance bots being tested.</td>
+              <td><span class="tag yes">Not Eliminated</span></td>
+            </tr>
+
+             <br>
+             <br>
+
+             <h1>Crowdsourced Civic Issue Tracker (India) – SIH 2025 Research</h1>
+
+  <div class="summary">
+    <h2>Introduction / Summary</h2>
+    <p>
+      Crowdsourcing civic issues empowers citizens to directly report local problems like potholes, garbage dumps, broken streetlights, and water leakages to the authorities. 
+      In India, platforms such as the <strong>Swachhata App</strong> and <strong>CPGRAMS</strong> have already shown progress in improving citizen–government interaction. 
+      The <strong>Smart Cities Mission</strong> also emphasizes citizen-driven planning and feedback.
+    </p>
+    <p>
+      However, these systems face challenges: fragmented apps, complex interfaces, limited feedback loops, and exclusion of digitally weaker groups. 
+      A unified, AI-powered, multilingual, and accessible platform could bridge these gaps and create a stronger link between citizens and local governments.
+    </p>
+  </div>
+
+  <h2>Research Table</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Aspect</th>
+        <th>Details</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Existing Solutions in India</strong></td>
+        <td>
+          <ul>
+            <li><strong>CPGRAMS</strong>: Central portal for grievances across government departments (integrated with UMANG, CSCs).</li>
+            <li><strong>Swachhata App</strong>: Covers 4,900+ cities for sanitation complaints under Swachh Bharat Mission.</li>
+            <li><strong>Smart City Apps</strong>: Examples include <em>Bhopal Plus</em> and Mumbai’s <em>Pothole QuickFix</em>.</li>
+            <li><strong>NGO-led civic tech</strong>: e.g., <em>IChangeMyCity</em> (Bengaluru), community-driven reporting with high resolution rate.</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td><strong>Drawbacks of Existing Solutions</strong></td>
+        <td>
+          <ul>
+            <li>Complex and lengthy complaint forms; not user-friendly.</li>
+            <li>Minimal feedback or unclear status tracking → low citizen trust.</li>
+            <li>Fragmented platforms (different apps for sanitation, transport, etc.).</li>
+            <li>Accessibility issues for low-literacy or non-smartphone users.</li>
+            <li>Limited multilingual or voice/IVR support.</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td><strong>Government Initiatives / Policies</strong></td>
+        <td>
+          <ul>
+            <li><strong>CPGRAMS</strong>: Centralized grievance redressal, being upgraded with AI/NLP for better routing.</li>
+            <li><strong>Swachh Bharat Mission (Urban)</strong>: Includes Swachhata app with SLAs for sanitation complaint resolution.</li>
+            <li><strong>Smart Cities Mission</strong>: Citizen-driven planning; use of dashboards & integrated command centers.</li>
+            <li><strong>Digital India / UMANG / MyGov</strong>: Grievance modules integrated into national digital platforms.</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td><strong>Real End-Users & Needs</strong></td>
+        <td>
+          <ul>
+            <li><strong>Citizens</strong>: Need simple, multilingual, real-time reporting with status updates.</li>
+            <li><strong>Marginalized groups</strong>: Need IVR/SMS/WhatsApp-based reporting (low digital barriers).</li>
+            <li><strong>Municipal staff/engineers</strong>: Require dashboards and auto-escalation workflows.</li>
+            <li><strong>City leaders/administrators</strong>: Need analytics and performance monitoring tools.</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td><strong>Specific Gaps / Limitations</strong></td>
+        <td>
+          <ul>
+            <li>Data silos: Complaints scattered across different systems.</li>
+            <li>Poor transparency: Citizens often get “closed” status without detailed outcomes.</li>
+            <li>Narrow issue coverage: One app per issue; no universal platform.</li>
+            <li>Access divide: Rural and low-literacy citizens excluded.</li>
+            <li>Language barriers: Many apps still dominated by English interfaces.</li>
+            <li>Weak analytics: Lack of AI-driven insights for proactive governance.</li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="takeaways">
+    <h2>Key Takeaways / Why This Matters for SIH 2025</h2>
+    <ul>
+      <li><strong>Innovation Space:</strong> No existing solution integrates <em>all</em> civic issues with multilingual accessibility, AI-driven insights, and real-time accountability.</li>
+      <li><strong>Hackathon Feasibility:</strong> A prototype can be built using MERN stack + AI/ML + open government APIs.</li>
+      <li><strong>Impact:</strong> Solves real pain points (trust, accessibility, fragmentation) and aligns with <em>Smart Cities Mission</em>, <em>Swachh Bharat Mission</em>, and <em>Digital India</em>.</li>
+    </ul>
+    <p><strong>Conclusion:</strong> The Crowdsourced Civic Issue Tracker is a <span style="color:#16a085; font-weight:bold;">strong candidate problem statement</span> for SIH 2025.</p>
+  </div>
+
+
+          
+          </tbody>
+        </table>
+      </div>
+
+      <footer>
+        <div class="muted">Note: Table based on authoritative reports (2020–2025). Crowdsourced Civic Issue, Telemedicine, and AI‑Advisory remain viable; Real‑Time Transport Tracking is eliminated due to oversaturation and hardware dependency.</div>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
